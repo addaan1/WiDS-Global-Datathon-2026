@@ -1,0 +1,17 @@
+# Competition data
+train.csv
+test.csv
+metaData.csv
+sample_submission.csv
+
+# Generated submissions
+submission*.csv
+
+# Local model artifacts
+catboost_info/
+*.ipynb_checkpoints
+__pycache__/
+
+# OS clutter
+.DS_Store
+Thumbs.db

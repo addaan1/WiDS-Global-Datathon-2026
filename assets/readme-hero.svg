@@ -1,0 +1,129 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiDS Global Datathon 2026 workflow banner">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="80" x2="1440" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.48" stop-color="#171521"/>
+      <stop offset="1" stop-color="#26120D"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 180) rotate(130) scale(420 300)">
+      <stop stop-color="#F97316" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 720) rotate(10) scale(420 270)">
+      <stop stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101827" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#1C1420" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="36" fill="url(#glowA)"/>
+  <rect width="1600" height="900" rx="36" fill="url(#glowB)"/>
+
+  <g opacity="0.28">
+    <circle cx="1160" cy="190" r="136" fill="#F97316"/>
+    <circle cx="1240" cy="250" r="52" fill="#FDBA74"/>
+    <circle cx="1280" cy="128" r="24" fill="#FDE68A"/>
+    <circle cx="260" cy="690" r="100" fill="#0EA5E9"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="82" y="84" width="1436" height="732" rx="28" fill="#0B1322" fill-opacity="0.76" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  </g>
+
+  <text x="128" y="184" fill="#F8FAFC" font-size="64" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">WiDS Global Datathon 2026</text>
+  <text x="128" y="238" fill="#CBD5E1" font-size="28" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">
+    Survival analysis for wildfire threat timing
+  </text>
+  <text x="128" y="286" fill="#94A3B8" font-size="22" font-weight="400" font-family="Inter, Segoe UI, Arial, sans-serif">
+    Predict the probability of a fire reaching an evacuation zone within 12, 24, 48, and 72 hours.
+  </text>
+
+  <g>
+    <rect x="128" y="336" width="146" height="50" rx="25" fill="url(#chip)"/>
+    <text x="201" y="369" text-anchor="middle" fill="#111827" font-size="20" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">221 train</text>
+    <rect x="286" y="336" width="132" height="50" rx="25" fill="#1F2937" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <text x="352" y="369" text-anchor="middle" fill="#E2E8F0" font-size="20" font-weight="600" font-family="Inter, Segoe UI, Arial, sans-serif">95 test</text>
+    <rect x="430" y="336" width="158" height="50" rx="25" fill="#1F2937" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <text x="509" y="369" text-anchor="middle" fill="#E2E8F0" font-size="20" font-weight="600" font-family="Inter, Segoe UI, Arial, sans-serif">4 horizons</text>
+    <rect x="600" y="336" width="158" height="50" rx="25" fill="#1F2937" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <text x="679" y="369" text-anchor="middle" fill="#E2E8F0" font-size="20" font-weight="600" font-family="Inter, Segoe UI, Arial, sans-serif">5 x 5 CV</text>
+  </g>
+
+  <g transform="translate(128 448)">
+    <text x="0" y="-24" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Workflow</text>
+    <rect x="0" y="0" width="214" height="90" rx="20" fill="url(#panel)" stroke="#F59E0B" stroke-opacity="0.55"/>
+    <text x="107" y="36" text-anchor="middle" fill="#FDE68A" font-size="18" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Data</text>
+    <text x="107" y="62" text-anchor="middle" fill="#E2E8F0" font-size="16" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Understanding</text>
+
+    <path d="M226 45H276" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M266 37L278 45L266 53" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="290" y="0" width="214" height="90" rx="20" fill="url(#panel)" stroke="#38BDF8" stroke-opacity="0.50"/>
+    <text x="397" y="36" text-anchor="middle" fill="#BAE6FD" font-size="18" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Feature</text>
+    <text x="397" y="62" text-anchor="middle" fill="#E2E8F0" font-size="16" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Engineering</text>
+
+    <path d="M516 45H566" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M556 37L568 45L556 53" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="580" y="0" width="214" height="90" rx="20" fill="url(#panel)" stroke="#22C55E" stroke-opacity="0.50"/>
+    <text x="687" y="36" text-anchor="middle" fill="#BBF7D0" font-size="18" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Repeated</text>
+    <text x="687" y="62" text-anchor="middle" fill="#E2E8F0" font-size="16" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">CV / OOF</text>
+
+    <path d="M806 45H856" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M846 37L858 45L846 53" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="870" y="0" width="214" height="90" rx="20" fill="url(#panel)" stroke="#FB7185" stroke-opacity="0.50"/>
+    <text x="977" y="36" text-anchor="middle" fill="#FECDD3" font-size="18" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Blend &</text>
+    <text x="977" y="62" text-anchor="middle" fill="#E2E8F0" font-size="16" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Calibration</text>
+
+    <path d="M1096 45H1146" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1136 37L1148 45L1136 53" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="1160" y="0" width="214" height="90" rx="20" fill="url(#panel)" stroke="#F97316" stroke-opacity="0.55"/>
+    <text x="1267" y="36" text-anchor="middle" fill="#FED7AA" font-size="18" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Final</text>
+    <text x="1267" y="62" text-anchor="middle" fill="#E2E8F0" font-size="16" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Submission</text>
+  </g>
+
+  <g transform="translate(128 610)">
+    <rect x="0" y="0" width="710" height="176" rx="24" fill="#111827" fill-opacity="0.82" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="28" y="40" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Key signals</text>
+    <text x="28" y="80" fill="#CBD5E1" font-size="18" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Distance to evac zone</text>
+    <rect x="280" y="66" width="300" height="14" rx="7" fill="#1F2937"/>
+    <rect x="280" y="66" width="255" height="14" rx="7" fill="#F59E0B"/>
+    <text x="28" y="122" fill="#CBD5E1" font-size="18" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Closing speed + alignment</text>
+    <rect x="280" y="108" width="300" height="14" rx="7" fill="#1F2937"/>
+    <rect x="280" y="108" width="225" height="14" rx="7" fill="#38BDF8"/>
+    <text x="28" y="164" fill="#CBD5E1" font-size="18" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">Temporal quality + sparse features</text>
+    <rect x="280" y="150" width="300" height="14" rx="7" fill="#1F2937"/>
+    <rect x="280" y="150" width="190" height="14" rx="7" fill="#22C55E"/>
+  </g>
+
+  <g transform="translate(914 610)">
+    <rect x="0" y="0" width="532" height="176" rx="24" fill="#111827" fill-opacity="0.82" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="28" y="40" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Model lanes</text>
+    <path d="M52 124C104 104 134 86 166 88C200 90 228 112 266 106C316 98 340 62 388 70C434 78 450 112 482 104" stroke="#F97316" stroke-width="6" stroke-linecap="round"/>
+    <path d="M52 138C106 126 140 128 176 118C226 104 252 70 300 78C350 86 362 136 420 132C458 130 478 114 482 112" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+    <path d="M52 150C92 146 126 140 156 130C202 116 234 112 266 118C316 128 344 154 392 150C436 146 458 132 482 126" stroke="#22C55E" stroke-width="6" stroke-linecap="round" opacity="0.88"/>
+    <line x1="46" y1="60" x2="46" y2="154" stroke="#475569" stroke-width="2"/>
+    <line x1="46" y1="154" x2="488" y2="154" stroke="#475569" stroke-width="2"/>
+    <text x="86" y="176" fill="#CBD5E1" font-size="14" font-family="Inter, Segoe UI, Arial, sans-serif">12h</text>
+    <text x="196" y="176" fill="#CBD5E1" font-size="14" font-family="Inter, Segoe UI, Arial, sans-serif">24h</text>
+    <text x="308" y="176" fill="#CBD5E1" font-size="14" font-family="Inter, Segoe UI, Arial, sans-serif">48h</text>
+    <text x="424" y="176" fill="#CBD5E1" font-size="14" font-family="Inter, Segoe UI, Arial, sans-serif">72h</text>
+  </g>
+
+  <text x="128" y="846" fill="#64748B" font-size="18" font-weight="500" font-family="Inter, Segoe UI, Arial, sans-serif">
+    Family-aware feature selection • fine RSF/GBM blend sweep • Platt calibration candidate • direct horizon lane
+  </text>
+</svg>
