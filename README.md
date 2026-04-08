@@ -53,7 +53,7 @@ That is why this project uses **survival analysis** instead of ordinary binary c
 ## Competition Overview
 
 <p align="center">
-  <img src="assets/readme-overview.svg" alt="Competition overview visual" width="100%" />
+  <img src="https://raw.githubusercontent.com/addaan1/WiDS-Global-Datathon-2026/main/assets/readme-overview.svg" alt="Competition overview visual" width="100%" />
 </p>
 
 **Competition:** WiDS Global Datathon 2026  
@@ -99,7 +99,7 @@ That is why this notebook does not just optimize ranking. It also pays close att
 ## Dataset At A Glance
 
 <p align="center">
-  <img src="assets/readme-signals.svg" alt="Dataset and signal overview visual" width="100%" />
+  <img src="https://raw.githubusercontent.com/addaan1/WiDS-Global-Datathon-2026/main/assets/readme-signals.svg" alt="Dataset and signal overview visual" width="100%" />
 </p>
 
 The competition dataset is small, structured, and information-dense:
@@ -147,7 +147,7 @@ The competition dataset is small, structured, and information-dense:
 ## Methodology
 
 <p align="center">
-  <img src="assets/readme-pipeline.svg" alt="Notebook pipeline visual" width="100%" />
+  <img src="https://raw.githubusercontent.com/addaan1/WiDS-Global-Datathon-2026/main/assets/readme-pipeline.svg" alt="Notebook pipeline visual" width="100%" />
 </p>
 
 This project uses a notebook-first workflow that stays readable while still being competitive for a small survival-analysis dataset.
@@ -353,3 +353,9 @@ If you open the notebook, you should be able to follow the modeling story from r
 
 **Sahrul Adicandra Effendy**  
 Data Science Student at Airlangga University
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
