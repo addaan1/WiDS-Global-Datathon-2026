@@ -346,3 +346,10 @@ This repository is not just a submission dump. It is a learning-oriented, compet
 - realistic survival-analysis thinking for a high-stakes wildfire problem
 
 If you open the notebook, you should be able to follow the modeling story from raw data understanding all the way to final submission generation.
+
+---
+
+## Author
+
+**Sahrul Adicandra Effendy**  
+Data Science Student at Airlangga University

@@ -72,5 +72,5 @@
   <rect x="68" y="662" width="1264" height="172" rx="26" fill="url(#card)" stroke="#22C55E" stroke-opacity="0.45"/>
   <text x="96" y="710" fill="#BBF7D0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">8. Final submission logic</text>
   <text x="96" y="752" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Choose the strongest candidate by hybrid score behavior, generate monotonic horizon probabilities, and export a file whose name matches the selected method.</text>
-  <text x="96" y="792" fill="#94A3B8" font-size="17" font-weight="500" font-family="Segoe UI, Arial, sans-serif">The output remains schema-safe: valid IDs, probabilities in range, and monotone 12h <= 24h <= 48h <= 72h.</text>
+  <text x="96" y="792" fill="#94A3B8" font-size="17" font-weight="500" font-family="Segoe UI, Arial, sans-serif">The output remains schema-safe: valid IDs, probabilities in range, and monotone 12h &lt;= 24h &lt;= 48h &lt;= 72h.</text>
 </svg>
