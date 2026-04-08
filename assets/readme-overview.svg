@@ -1,0 +1,67 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Competition overview">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="80" x2="1320" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09111D"/>
+      <stop offset="0.5" stop-color="#101827"/>
+      <stop offset="1" stop-color="#1E1726"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#181D33"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="860" rx="32" fill="url(#bg)"/>
+  <text x="68" y="92" fill="#F8FAFC" font-size="40" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Competition Overview</text>
+  <text x="68" y="132" fill="#94A3B8" font-size="20" font-weight="500" font-family="Segoe UI, Arial, sans-serif">A quick visual summary of the prediction target, evaluation metric, and dataset scope.</text>
+
+  <rect x="68" y="176" width="610" height="220" rx="24" fill="url(#card)" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <text x="96" y="220" fill="#FDE68A" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">What must be predicted?</text>
+  <text x="96" y="264" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Probability that a wildfire threatens an evacuation zone</text>
+  <text x="96" y="296" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">within 12h, 24h, 48h, and 72h.</text>
+  <rect x="96" y="326" width="110" height="42" rx="21" fill="#F97316"/>
+  <text x="151" y="353" text-anchor="middle" fill="#111827" font-size="16" font-weight="800" font-family="Segoe UI, Arial, sans-serif">12h</text>
+  <rect x="218" y="326" width="110" height="42" rx="21" fill="#FB923C"/>
+  <text x="273" y="353" text-anchor="middle" fill="#111827" font-size="16" font-weight="800" font-family="Segoe UI, Arial, sans-serif">24h</text>
+  <rect x="340" y="326" width="110" height="42" rx="21" fill="#38BDF8"/>
+  <text x="395" y="353" text-anchor="middle" fill="#0F172A" font-size="16" font-weight="800" font-family="Segoe UI, Arial, sans-serif">48h</text>
+  <rect x="462" y="326" width="110" height="42" rx="21" fill="#22C55E"/>
+  <text x="517" y="353" text-anchor="middle" fill="#052E16" font-size="16" font-weight="800" font-family="Segoe UI, Arial, sans-serif">72h</text>
+
+  <rect x="722" y="176" width="610" height="220" rx="24" fill="url(#card)" stroke="#38BDF8" stroke-opacity="0.45"/>
+  <text x="750" y="220" fill="#BAE6FD" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Why survival analysis?</text>
+  <text x="750" y="264" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Many fires are right-censored: they do not hit within the 72h window.</text>
+  <text x="750" y="298" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">We need timing-aware risk estimates, not just a binary alert label.</text>
+  <text x="750" y="338" fill="#94A3B8" font-size="17" font-weight="500" font-family="Segoe UI, Arial, sans-serif">event = 1 -> observed hit within 72h</text>
+  <text x="750" y="368" fill="#94A3B8" font-size="17" font-weight="500" font-family="Segoe UI, Arial, sans-serif">event = 0 -> censored at last observed time</text>
+
+  <rect x="68" y="436" width="610" height="320" rx="24" fill="url(#card)" stroke="#22C55E" stroke-opacity="0.45"/>
+  <text x="96" y="480" fill="#BBF7D0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Evaluation metric</text>
+  <text x="96" y="532" fill="#F8FAFC" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Hybrid Score</text>
+  <text x="96" y="572" fill="#E2E8F0" font-size="24" font-weight="600" font-family="Segoe UI, Arial, sans-serif">0.3 * C-index + 0.7 * (1 - Weighted Brier)</text>
+  <text x="96" y="622" fill="#94A3B8" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Weighted Brier emphasizes decision-useful horizons:</text>
+  <rect x="96" y="654" width="120" height="16" rx="8" fill="#F97316"/>
+  <text x="228" y="668" fill="#CBD5E1" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">24h</text>
+  <rect x="288" y="654" width="180" height="16" rx="8" fill="#38BDF8"/>
+  <text x="480" y="668" fill="#CBD5E1" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">48h</text>
+  <rect x="540" y="654" width="120" height="16" rx="8" fill="#22C55E"/>
+  <text x="96" y="712" fill="#94A3B8" font-size="16" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Operationally, 48h gets the largest weight because it balances lead time and urgency.</text>
+
+  <rect x="722" y="436" width="610" height="320" rx="24" fill="url(#card)" stroke="#FB7185" stroke-opacity="0.45"/>
+  <text x="750" y="480" fill="#FECDD3" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Dataset scope</text>
+  <rect x="750" y="516" width="118" height="92" rx="20" fill="#111827" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="809" y="554" text-anchor="middle" fill="#F8FAFC" font-size="30" font-weight="800" font-family="Segoe UI, Arial, sans-serif">221</text>
+  <text x="809" y="584" text-anchor="middle" fill="#94A3B8" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">train rows</text>
+  <rect x="886" y="516" width="118" height="92" rx="20" fill="#111827" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="945" y="554" text-anchor="middle" fill="#F8FAFC" font-size="30" font-weight="800" font-family="Segoe UI, Arial, sans-serif">95</text>
+  <text x="945" y="584" text-anchor="middle" fill="#94A3B8" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">test rows</text>
+  <rect x="1022" y="516" width="118" height="92" rx="20" fill="#111827" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="1081" y="554" text-anchor="middle" fill="#F8FAFC" font-size="30" font-weight="800" font-family="Segoe UI, Arial, sans-serif">69</text>
+  <text x="1081" y="584" text-anchor="middle" fill="#94A3B8" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">events</text>
+  <rect x="1158" y="516" width="118" height="92" rx="20" fill="#111827" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="1217" y="554" text-anchor="middle" fill="#F8FAFC" font-size="30" font-weight="800" font-family="Segoe UI, Arial, sans-serif">152</text>
+  <text x="1217" y="584" text-anchor="middle" fill="#94A3B8" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">censored</text>
+  <text x="750" y="652" fill="#E2E8F0" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">34 early-incident features from the first 5 hours after ignition.</text>
+  <text x="750" y="686" fill="#94A3B8" font-size="16" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Distance, growth, motion, directionality, and temporal metadata.</text>
+  <text x="750" y="724" fill="#94A3B8" font-size="16" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Small data + censoring + multi-horizon scoring make validation discipline essential.</text>
+</svg>
